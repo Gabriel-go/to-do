@@ -1,2 +1,0 @@
--- SQLite
-drop TABLE users
