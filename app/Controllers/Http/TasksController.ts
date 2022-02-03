@@ -32,7 +32,6 @@ export default class TasksController {
     public async destroy({request}: HttpContext) {        
         const parametos = request.params();
         const task = await Task.findOrFail(parametos.id);
-        return await task.delete();
-                
+        return await task.delete();                
     }
 }
